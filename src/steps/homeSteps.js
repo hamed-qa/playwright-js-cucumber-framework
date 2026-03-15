@@ -14,6 +14,6 @@ When('I search for {string}', async function (searchQuery) {
 });
 
 Then('I should see search results', async function () {
-  await this.homePage.actions.waitForElement('1.product-layout');
+  await this.homePage.actions.waitForElement('.product-layout');
   await this.homePage.assertions.toContainURL('search');
 });
