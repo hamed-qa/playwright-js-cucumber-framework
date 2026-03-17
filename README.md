@@ -147,7 +147,7 @@ During test execution, you'll see:
 
 ## Author
 
-QA Team
+Hamed ABID
 
 ## License
 
