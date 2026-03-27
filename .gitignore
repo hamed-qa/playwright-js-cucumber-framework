@@ -1,0 +1,8 @@
+node_modules/
+src/screenshots/
+allure-results/
+allure-report/
+test-results/
+playwright-report/
+.env
+package-lock.json

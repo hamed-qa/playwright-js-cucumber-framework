@@ -1,0 +1,21 @@
+{
+  "name": "playwright-cucumber-project",
+  "version": "1.0.0",
+  "description": "Playwright with Cucumber BDD framework",
+  "scripts": {
+    "pretest": "node preserve-history.js && node generate-env.js && node generate-executor.js",
+    "test": "cucumber-js",
+    "test:chromium": "BROWSER=chromium npm test",
+    "test:firefox": "BROWSER=firefox npm test",
+    "test:webkit": "BROWSER=webkit npm test",
+    "test:all": "npm run test:chromium && npm run test:firefox && npm run test:webkit",
+    "report": "allure generate allure-results --clean && allure open"
+  },
+  "keywords": ["playwright", "cucumber", "bdd"],
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@playwright/test": "^1.49.0",
+    "allure-commandline": "^2.27.0",
+    "allure-js-commons": "^2.15.0"
+  }
+}
